@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>MAKAUT, W.B.</title>
+</head>
+
+<body>
+    
+    <style>
+     
+        .head{ 
+            display: flex;
+            height: 87px;
+        }
+        .heading{
+            margin-top: 21px;
+            padding-left: 15px;
+            height: 87px;
+        }
+        .heading h6{
+            font-size: 15px;
+            color: rgb(5, 5, 110);
+            font-weight: 900;
+            margin-bottom: 0px;
+        }
+        .heading h6.sky{
+            color: rgb(50, 50, 206);
+        }
+        .heading span.italic{
+            color: rgb(168, 165, 165);
+            font-weight: 100;
+            font-family: italic;
+            margin-right: 12px;
+        }
+        .heading p{
+            padding-left: 43%;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+        .richie {
+            width: 1145px;
+            height: 210px;
+            margin-left: 170px;
+            margin-top: 1px;
+            margin-bottom: 15px;
+        }
+
+        .Donald {
+            top: 20px;
+            width: 100%;
+            height: 12px;
+            background: black;
+            border-top: solid 10px black;
+        }
+        .line{
+            display: flex;
+        }
+        .dual1{
+            top: 20px;
+            width: 30%;
+            height: 5px;
+            background: solid rgb(255, 196, 0);
+            background-color: rgb(255, 170, 0);
+            border-top: 1px;
+            margin-top: 2px;
+        }
+        .dual2{
+            top: 20px;
+            width: 70%;
+            height: 5px;
+            background: solid rgb(255, 196, 0);
+            background-color: rgb(0, 38, 255);
+            border-top: 1px;
+            margin-top: 2px;
+        }
+
+        .Dog{
+            margin-left: 170px;
+            height: 87px;
+            width: 85px;
+        }
+
+        .Cat {
+            margin-left: 30px;
+            margin-right: 0px;
+            border-top:4px solid rgb(9, 183, 226);
+           
+            border-bottom: 4px solid rgb(82, 3, 82);
+          
+            box-shadow: 2px 2px 2px solid black;
+            width: 362px;
+            height: 100px;
+            display:inline-block;
+            background-image: repeating-linear-gradient(135deg, rgb(255, 255, 255), #a4a4a473 1px, rgb(255, 255, 255) 1% );
+            padding-left: 23px;
+            padding-top: 18px;
+
+        }
+        
+        .cont{
+            display: flex;
+            margin-left: 140px;
+        }
+        strong{
+            font-size: 23px;
+           
+        }
+
+        .General{
+            margin-left: 170px;
+            border: 1px solid white;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:rgba(64, 157, 194, 0.521);
+            position: absolute;
+            width: 756px;
+            height: 300px;
+            box-shadow: 0.1px 0.1px 2px 0.1px;
+            font-size:13px;
+            text-align: center;
+        }
+        .general{
+            bottom:-10px;
+            position: relative;
+            font-size: 20px;
+            font-stretch: expanded;
+            text-align: left;
+            color: rgb(33, 67, 99);
+        }
+        .transcription{
+            border: 1px white solid ;
+            display: inline-block;
+            background-color:rgb(26, 130, 179);
+            width: 200px;
+            height: 100px;
+            position: relative;
+            color: aliceblue;
+            margin-top: 5px;
+            left: -40px;
+        }
+        .newsyllabus{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(24, 7, 70);
+            color: white;
+            margin-left: 230px;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            left: -210px;
+            top: 0px;
+        }
+        .teacherapp {
+            border: 1px solid white;
+            display: inline-block;
+            background-color: rgb(179, 151, 26);
+            margin-left: 200px;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            left: 158px;
+            color: aliceblue;
+            margin-top: 5px;
+            top: -105px;
+        }
+        .Verification{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(33, 55, 151);
+            margin-left: 200px;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            left: -357px;
+            top: -80px;
+            color: aliceblue;
+           
+        }
+        .diploma{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(107, 31, 151);
+            margin-left: 200px;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            left: -93px;
+            top: -190px;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+        
+        .a:hover{
+          color: rgba(24, 41, 185, 0.993); 
+         
+        }
+        .ex{
+            color: black;
+            border: 0px;
+            
+        }
+        
+        
+        .button:hover{
+            color:rgb(229, 255, 0);
+        }
+        .button1{
+            font-size: medium;
+            
+            border-radius: 10px 10px 10px 10px;
+            padding: 2px 50px;
+            border: 0px;
+            margin-top: 10px ;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.411) ;
+
+        }
+        .button2{
+            font-size: medium;
+            
+            border-radius: 10px 10px 10px 10px;
+            padding: 2px 40px;
+            border: 0px;
+            margin-top: 10px ;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.411) ;
+        }
+        .PEA{
+            margin-left: 170px;
+            margin-top: 20px;
+            top: 740px;
+            border: 1px solid white;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:rgba(64, 157, 194, 0.521);
+            position: absolute;
+            width: 756px;
+            height: 190px;
+            box-shadow: 0.1px 0.1px 2px 0.1px;
+            font-size:13px;
+            text-align: center;
+        }
+        .pea{
+            bottom:-10px;
+            position: relative;
+            font-size: 20px;
+            font-stretch: expanded;
+            text-align: left;
+            color: rgb(33, 67, 99);
+        }
+        
+        .admtcrd{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(24, 7, 70);
+            color: white;
+            margin-left: 230px;
+            margin-top: 5px;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            left: -372px;
+            top: 0px;  
+        }
+        .schedule{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(24, 7, 70);
+            color: white;
+            margin-left: 230px;
+            margin-top: 5px;
+            width: 200px;
+            height: 118px;
+            position: relative;
+            left: -106px;
+            top: -105px;  
+        }
+        .POSTE{
+            margin-left: 170px;
+            margin-top: 20px;
+            top: 950px;
+            border: 1px solid white;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:rgba(64, 157, 194, 0.521);
+            position: absolute;
+            width: 756px;
+            height: 290px;
+            box-shadow: 0.1px 0.1px 2px 0.1px;
+            font-size:13px;
+            text-align: center;
+        }
+        .poste{
+            bottom:-10px;
+            position: relative;
+            font-size: 20px;
+            font-stretch: expanded;
+            text-align: left;
+            color: rgb(33, 67, 99);
+        }
+        .resultsinhouse{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(107, 31, 151);
+            margin-left: 200px;
+            width: 200px;
+            height: 137px;
+            position: relative;
+            left:-357px;
+            top: -4px;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+        .resultsoldsession{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(107, 31, 151);
+            margin-left: 200px;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            top: -150px;
+            left: -90px;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+        .sepsupres{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(107, 31, 151);
+            margin-left: 200px;
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 143px;
+            left: 87px;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+        .pprres{
+            border: 1px solid white;
+            display: inline-block;
+            background-color:rgb(107, 31, 151);
+            margin-left: 200px;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 53px;          
+            left: 335px;
+            color: aliceblue;
+            
+        }
+        .LTSTANN{
+            margin-left: 170px;
+            border: 1px solid white;
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:rgba(64, 157, 194, 0.521);
+            position: absolute;
+            width: 359px;
+            height: 815px;
+            box-shadow: 0.1px 0.1px 2px 0.1px;
+            font-size: 15px;
+           
+            left: 786px;
+            font-weight: 500;
+        }
+        .ltsan{
+            bottom:-10px;
+           
+            font-size: 20px;
+            position: relative;
+            
+            
+            color: rgb(33, 67, 99);
+            padding-left: 0%;
+            padding-bottom: 0%;
+        }
+        .ex2{
+            color: rgba(0, 0, 0, 0.699);
+            border: 0px;
+        }
+        .box{
+            padding-top: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            background-color:rgba(194, 105, 64, 0);
+            position: absolute;
+            width: 300px;
+            height: 700px;
+            font-size: 15px;
+            left: 35px;
+            color: rgba(0, 0, 0, 0.699);
+        }
+        .box2{
+            padding-top: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            background-color:rgba(66, 64, 194, 0);
+            position: absolute;
+            width: 15px;
+            height: 700px;
+            font-size: 15px;
+            left: 20px;
+            color: rgba(0, 0, 0, 0.842);
+            
+        }
+        .rdmr{
+            position:absolute;
+            top: 775px;
+            left: 250px;
+        }
+        .footer{
+            top:1280px;
+            width: 100%;
+            height: 33px;
+            background-color: rgb(34, 112, 177);
+            position: absolute;
+        }
+        .ft{
+            position:absolute;
+            color: bisque;
+            left: 800px;
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        
+
+      
+     
+    </style>
+    <div class="head">
+    <img src="makautlogo.png"
+        width="100px" class="Dog">
+        <div class="heading">
+            <h6>Maulana Abul Kalam Azad University of Technology,West Bengal</h6>
+            <h6 class="sky"><span class="italic"><i>formerly known as</i></span> West Bengal University of
+                Technology</h6>
+            <p><b>BF 142 , sector 1 , Salt lake City , Kolkata-700064</b></p>
+        </div>
+    </div>
+    <div class="line">
+        <div class="dual1"></div>
+        <div class="dual2"></div>
+    </div>
+    <img src="makautfront.jpg" class="richie">
+    <div class="cont">
+    <div class="Cat">
+        <strong>
+        MEMBER'S AREA
+        <br>
+        </strong>
+        <p>
+            <a>•</a><a class="ex" href="" style="text-decoration:none"> Click to Visit</a>
+        </p>
+    </div>
+    <div class="Cat">
+        <strong>
+        LETTERS AND NOTICES
+        </strong>
+        <p>
+            <a>•</a><a class="ex" href="" style="text-decoration:none"> Click to Visit</a>
+        </p>
+    </div>
+    <div class="Cat">
+        <strong>
+        APPLICATION AND NOTICE
+        </strong>
+        <p>
+            <a>•</a><a class="ex" href="" style="text-decoration:none"> Click to Visit</a>
+        </p>
+    </div>
+    </div>
+    <br>
+    <div class="General ">
+        <div class="general">GENERAL</div>
+            <hr margin-top="0px" style="margin-top: 10px;margin-bottom: 5px;">
+            <div class="transcription">
+                <b>TRANSCRIPT/DUPLICATE</b>
+                <b>GRADE CARD</b>
+                <br>
+                    <button class="button button1"><b>Apply Now</b></button>
+            </div>
+        
+            <div class="newsyllabus">
+                <br>
+                <b>NEW SYLLABUS</b>
+                <br>
+                    <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+            <div class="teacherapp">
+                <br>
+                <b>TEACHER APPOINTMENT</b>
+                <br>
+                    <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+            <div class="Verification">
+                <b>VERIFICATION OF ACADEMIC CREDENTIALS </b>
+                <br>
+                <button class="button button1"><b>Apply Now</b></button>
+            </div>
+            <div class="diploma">
+                <b>CERTIFICATE / DIPLOMA /</b>
+                <br>
+                <b>PGD COURSES</b>
+                <br>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+        </div>
+    </div>
+        
+    <div class="PEA">
+        <div class="pea">PRE EXAM ACTIVITIES</div>
+        <hr margin-top="0px" style="margin-top: 10px;margin-bottom: 5px;">
+            <div class="admtcrd">
+                <br>
+                <b>ADMIT CARD</b>
+                <br>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>        
+            <div class="schedule">
+                <br>
+                <b>SCHEDULE FOR ODD SEM</b>
+                <b>EXAMINATION 2021-22</b>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+    </div>
+    <div class="POSTE">
+        <div class="poste">POST EXAM ACTIVITES</div>
+        <hr margin-top="0px" style="margin-top: 10px;margin-bottom: 5px;">
+            <div class="resultsinhouse">
+                <br>
+                <b>RESULTS IN-</b>
+                <b>HOUSE(INTERMIDAITE</b>
+                <b>SEMSESTER 2019-20)</b>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+            <div class="resultsoldsession">
+                <br>
+                <b>RESULTS OLD SESSION</b>
+                <br>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+            <div class="sepsupres">
+                <br>
+                <b>SEPERATE SUPPLIMENTARY</b>
+                <b>RESULT</b>
+                <br>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+            <div class="pprres">
+                <br>
+                <b>PPR RESULT</b>
+                <br>
+                <button class="button button2"><b>Click to Visit</b></button>
+            </div>
+    </div>
+    <div class="LTSTANN">
+        <div class="ltsan">
+            <strong>LATEST ANNOUNCEMENT</strong>
+        </div>
+        <hr margin-top="0px" style="margin-top: 10px;margin-bottom: 5px;">
+        <div class="box2">
+            <p><a>•</a><br><br><br></p>
+            <p style="margin-top: 25px ;"><a>•</a><br><br></p>  
+            <p style="margin-top: 25px ;"><a>•</a><br></p>  
+            <p style="margin-top: 26px ;"><a>•</a><br><br><br></p>  
+            <p style="margin-top: 26px ;"><a>•</a></p>
+            <p style="margin-top: 26px ;"><a>•</a></p>
+            <p style="margin-top: 25px ;"><a>•</a><br><br></p>
+            <p style="margin-top: 26px ;"><a>•</a><br><br></p>
+            <p style="margin-top: 25px ;margin-bottom: 3px;"><a>•</a></p>
+            <p style="margin-top: 3px  ;"><a>•</a><br></p>
+            <p style="margin-top: 25px ;margin-bottom: 4px;"><a>•</a></p>
+            <p style="margin-top: 0px ;"><a>•</a><br></p>
+        </div>
+        <div class="box">
+        <p style="margin-bottom: 3px;">
+            <a>13-01-2022-</a><a class="ex2" href="" style="text-decoration:none">Notice on Online Examination process & Mock test for 3rd, 5th, 7th & 9th semester students of Odd Semester Examinations 2021-22</a>
+        </p>
+            <p style="margin-bottom: 3px;">
+            <a>24-12-2021-</a><a class="ex2" href="" style="text-decoration:none">Notice for form fill up of Odd Semester Examinations 3rd/5th/7th/9th Semester 2021-22</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a>13-12-2021-</a><a class="ex2" href="" style="text-decoration:none">Notice for Degree Certificates for the Academic year 2020-21</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Notice regarding enrolment of 1st semester students of AY 2021-22 and submission of Continuous Evaluation (CA) for all 1st semsester students in AY 2021-22</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Results publication of B. VoC Even Semester 2020-21</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Notice for Publication of results of Special Supplementary Examinations 2020-21</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Updated GE Baskets for Odd Semester 2020-21 for CBCS structure programs(Updated on 1st Sept. 2021)</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Notice on Form fill-up of Backlog Students for Special Supplementary(Even) Evaluation 2020-21</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Notice for Special Enrollment 2020-21</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Notice for Certificate and Grade Card Distribution</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Academic calendar 2021-22</a>
+        </p>
+        <p style="margin-bottom: 3px;">
+            <a class="ex2" href="" style="text-decoration:none">Notification for Publication of results of Intermediate Year Students of Even Semester 2020-21</a>
+        </p>
+        </div>
+        <div class="rdmr">
+            <a class="ex2" href="" style="text-decoration:none">Read More...</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ft">© 2018 All Rights Reserved Maulana Abul Kalam Azad University of Technology, W.B.</div>
+    </div>
+
+</body>
+
+</html>
