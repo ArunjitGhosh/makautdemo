@@ -1,1 +1,1 @@
-# makautdemo:https://arunjitghosh.github.io/makautdemo/
+# makautdemo: https://arunjitghosh.github.io/makautdemo/
